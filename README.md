@@ -2,6 +2,8 @@
 
 Python 2.7 Sample Application
 
+Application Web toute simple
+
 # Developer Workspace
 [![Contribute](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=c9gjtuvo566cyuxt)
 
