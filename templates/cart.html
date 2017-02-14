@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+dataLayer= [];
+// Measure a view of product details. This example assumes the detail view occurs on pageload,
+// and also tracks a standard pageview of the details page.
+  dataLayer.push({
+    'ecommerce': {
+      'checkout': {
+        'actionField': {'step': 1},
+        'products': [{
+          'name': 'Triblend Android T-Shirt',
+          'id': '12345',
+          'price': '15.25',
+          'brand': 'Google',
+          'category': 'Apparel',
+          'variant': 'Gray',
+          'quantity': 1
+       }]
+     }
+   }
+  });
+
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NDF8CV5');</script>
+<!-- End Google Tag Manager -->
+
+    <title>Page Panier</title>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDF8CV5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<script>
+/**
+ * A function to handle a click on a checkout button. This function uses the eventCallback
+ * data layer variable to handle navigation after the ecommerce data has been sent to Google Analytics.
+ */
+
+function onRemoveFromCart() {
+// Measure the removal of a product from a shopping cart.
+dataLayer.push({
+  'event': 'eventGA',
+  'ecommerce': {
+    'remove': {                               // 'remove' actionFieldObject measures.
+      'products': [{                          //  removing a product to a shopping cart.
+          'name': 'Triblend Android T-Shirt',
+          'id': '12345',
+          'price': '15.25',
+          'brand': 'Google',
+          'category': 'Apparel',
+          'variant': 'Gray',
+          'quantity': 1
+      }]
+    }
+  }
+})
+console.log("Remove from cart")};
+
+</script>
+
+
+<h1>Ceci est la page panier</h1>
+
+<button onclick = "onRemoveFromCart()">enlever l'objet du panier</button>
+
+
+<a href="./checkout_1"><button>Procéder à l'achat</button></a>
+
+
+</body>
+</html>

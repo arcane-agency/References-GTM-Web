@@ -2,6 +2,30 @@
 <html>
 <head>
 
+<script>
+dataLayer= [];
+// Measure a view of product details. This example assumes the detail view occurs on pageload,
+// and also tracks a standard pageview of the details page.
+  dataLayer.push({
+    'ecommerce': {
+      'checkout': {
+        'actionField': {'step': 2},
+        'products': [{
+          'name': 'Triblend Android T-Shirt',
+          'id': '12345',
+          'price': '15.25',
+          'brand': 'Google',
+          'category': 'Apparel',
+          'variant': 'Gray',
+          'quantity': 1
+       }]
+     }
+   }
+  });
+
+</script>
+
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -11,11 +35,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 
-
-    <title>site test Arcane</title>
-
+    <title>Choix options de livraison</title>
 </head>
-
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDF8CV5"
@@ -23,21 +44,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
-<h1> Ceci est la home page</h1>
-<p>Ceci est un paragraphe</p>
- 
-<h1>Ceci est un autre titre </h1>
-<p>Autre paragraphe</p>
+<h1>Ceci est la page du choix de livraison</h1>
 
-<div>
-    <a href="./product">aller vers la page produit</a>
-    
-</div>
-
-<div>
-<a href=# class="test-arcane">Un lien à traquer</a>
-</div>
-
+<a href="./checkout_2"><button>Choix des options de paiement</button></a>
 
 </body>
 </html>

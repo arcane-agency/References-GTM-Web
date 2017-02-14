@@ -1,18 +1,16 @@
-# web-python2.7-simple
+# Arcane Référence - Implémentation GTM Web
 
-Python 2.7 Sample Application
+L'objectif de ce projet est de donner un exemple d'implémentation "By the book" de GTM avec la méthodologie Arcane
 
-Application Web toute simple
+##Contenu de ce projet
 
-# Developer Workspace
-[![Contribute](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=c9gjtuvo566cyuxt)
+- Envoie d'un tag de pageView à chaque chargement d'une autre page HTML
 
-# Stack to use
-
-FROM [codenvy/ubuntu_python:2.7](https://hub.docker.com/r/codenvy/ubuntu_python/)
-
-# How to run
-
-| #       | Description           | Command  |
-| :------------- |:-------------| :-----|
-| 1      | Run | `cd ${current.project.path} && sudo virtualenv /env && sudo pip install -r requirements.txt && python main.py` |
+- Tracking d'un funnel de conversion avec les étapes suivantes : 
+    - Product Detail -> Page Produit
+    - Add to Cart -> Evénement d'ajout au panier
+    - Checkout step 1 -> Page Cart : confirmation du panier
+    - Remove from Cart -> Evénement de retrait du panier
+    - Checkout_1 -> Choix des options de livraison
+    - Checkout_2 -> Choix des options de paiement
+    - Purchase -> Confirmation de l'achat
