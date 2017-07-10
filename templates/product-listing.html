@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+/************* Implémentation du dataLayer au lancement de la page ***************/
+dataLayer= [];
+dataLayer.push({
+  //'variable1': 'valeur variable 1',
+  //'variable2': 'valeur variable 2'
+});
+/********************************************************/
+</script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TB9Z8GJ');</script>
+
+    <title>Page Listing Produits</title>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB9Z8GJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<script>
+/************* Implémentation du dataLayer lors du click sur un produit ***************/
+function actionOnClick(){
+    dataLayer.push({
+  'event': 'nom événement personnalisé',
+  //'variable1': 'valeur variable 1',
+  //'variable2': 'valeur variable 2'
+})
+console.log("click page produit")};
+/********************************************************/
+</script>
+
+
+<!------------------ Contenu de la Page HTML -------------------->
+
+<div class="container">
+
+<div class="row">
+    <div id="banner" class="homepage jumbotron">
+      <a href="/"><h2 class="text-center">Arcane t-shirt e-commerce</h2>
+      <h4 class="text-center">A shirt for EVERY occassion!</h4></a>
+    </div>
+    <div class="page-header">
+      <h1 class="text-center">All T-Shirts</h1>
+    </div>
+  </div>
+
+
+<div class="row">
+    <div class="col-sm-9">
+      
+    <div class="row">
+              
+          </div><div class="row">
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink" href="/product" onClick="actionOnClick()">
+        <img id="homepage-9bdd2-1" src="/static/ressources/yellowT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+
+      <div class="caption">
+        <div><a id="homepage-9bdd2-1" class="center-block itemLink btn btn-primary btn-sm" href="/product">Compton T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$44.00</strong></p>
+          <p class="text-center"><small>ID: 9bdd2</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-f6be8-2" src="/static/ressources/greyT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-f6be8-2" class="center-block itemLink btn btn-primary btn-sm" href="/product">Comverges T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$33.00</strong></p>
+          <p class="text-center"><small>ID: f6be8</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-b55da-3" src="/static/ressources/blackT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-b55da-3" class="center-block itemLink btn btn-primary btn-sm" href="/product">Flexigen T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$16.00</strong></p>
+          <p class="text-center"><small>ID: b55da</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-bc823-4" src="/static/ressources/pinkT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-bc823-4" class="center-block itemLink btn btn-primary btn-sm" href="/product">Fuelworks T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$92.00</strong></p>
+          <p class="text-center"><small>ID: bc823</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+          </div><div class="row">
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-035f0-5" src="/static/ressources/brownT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-035f0-5" class="center-block itemLink btn btn-primary btn-sm" href="/product">Futuris T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$55.00</strong></p>
+          <p class="text-center"><small>ID: 035f0</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-8835a-6" src="/static/ressources/azureT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-8835a-6" class="center-block itemLink btn btn-primary btn-sm" href="/product">Isoternia T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$57.00</strong></p>
+          <p class="text-center"><small>ID: 8835a</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-57b9d-7" src="/static/ressources/greenT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-57b9d-7" class="center-block itemLink btn btn-primary btn-sm" href="/product">Kiosk T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$55.00</strong></p>
+          <p class="text-center"><small>ID: 57b9d</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-dc646-8" src="/static/ressources/orangeT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-dc646-8" class="center-block itemLink btn btn-primary btn-sm" href="/product">Lunchpod T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$90.00</strong></p>
+          <p class="text-center"><small>ID: dc646</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+          </div><div class="row">
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-7w9e0-9" src="/static/ressources/brickT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-7w9e0-9" class="center-block itemLink btn btn-primary btn-sm" href="/product">Masons T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$31.00</strong></p>
+          <p class="text-center"><small>ID: 7w9e0</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-239b5-10" src="/static/ressources/violetT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-239b5-10" class="center-block itemLink btn btn-primary btn-sm" href="/product">Pigzart T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$82.00</strong></p>
+          <p class="text-center"><small>ID: 239b5</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-6d9b0-11" src="/static/ressources/arrowT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-6d9b0-11" class="center-block itemLink btn btn-primary btn-sm" href="/product">Poyo T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$62.00</strong></p>
+          <p class="text-center"><small>ID: 6d9b0</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+        
+        <div class="col-sm-3">
+    <div class="thumbnail">
+      <a class="itemLink"  href="/product" onClick="actionOnClick()">
+        <img id="homepage-6c3b0-12" src="/static/ressources/whiteT.png" alt="Item Picture" class="img-thumbnail">
+      </a>
+      <div class="caption">
+        <div><a id="homepage-6c3b0-12" class="center-block itemLink btn btn-primary btn-sm" href="/product">Zappix T-Shirt</a></div>
+        <div class="well well-sm">
+          <p class="text-center"><strong class="h4">$99.00</strong></p>
+          <p class="text-center"><small>ID: 6c3b0</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+    </div>
+  
+    </div>
+    <div class="col-sm-3">
+      <div class="row">
+        <div id="cart" class="panel panel-success">
+          <div class="panel-heading text-center"><span class="h5">Your Cart</span></div>
+          <table class="table table-bordered table-condensed">
+            <tbody><tr id="cartHeader"><th>Item</th><th>Quantity</th><th>Price</th></tr><tr class="cartItem-6c3b0"><td><a href="/cart">Zappix T-Shirt</a></td><td class="cartQuantity-6c3b0">1</td><td class="cartPrice-6c3b0 price">$99</td></tr>
+            <tr class="success"><td colspan="2">Total</td><td class="total">$99</td></tr>
+          </tbody></table>
+          <div class="panel-footer">
+            <button id="checkout" class="btn btn-success">
+              <span class="glyphicon glyphicon-shopping-cart"></span> Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="well promoWell">
+          <a class="itemLink" href="/item/57b9d">
+            <img id="promo-57b9d" src="/static/ressources/bts.png" alt"back="" to="" school="" picture"="" class="img-thumbnail">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+
+
+</body>
+</html>
