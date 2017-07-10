@@ -5,9 +5,13 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route("/product-listing")
+def product_listing():
+    return render_template('product-listing.html')
+
 @app.route("/product")
 def product_page():
-    return render_template('product.html')
+    return render_template('productPage.html')
 
 @app.route("/cart")
 def cart_page():
